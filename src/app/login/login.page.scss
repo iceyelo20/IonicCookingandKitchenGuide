@@ -1,0 +1,62 @@
+ion-content.background{
+    --background:url(../../assets/CKGBackground.jpg) 0 0/100% 100% no-repeat;
+    background-color: white;
+}
+
+.content{
+    position: fixed;
+    width: 80%;
+    height: auto;
+    margin-top: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 3px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.15);
+}
+
+.logo{
+    margin-top: 3%;
+    margin-bottom: 8px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.buttons-action{
+    margin-left: 5px;
+}
+
+.signup-text{
+    font-size: small;
+    color: #a8a8a8;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    text-transform: none;
+}
+
+.signin-text{
+    font-size: small;
+    color: #000000;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    text-transform: none;
+}
+
+ion-input{
+    background-color: #ededed;
+    border-radius: 5px;
+    font-size: small;
+}
+
+.actionbutton{
+    background-color: turquoise;
+    color: black;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: small;
+    font-family: 'Nunito', sans-serif;
+}

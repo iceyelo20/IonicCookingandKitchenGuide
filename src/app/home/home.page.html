@@ -1,0 +1,40 @@
+  <ion-header>
+    <ion-toolbar>
+      <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div>
+        <ion-label style="font-size:150%; font-weight: bolder;">Dishes</ion-label>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+        <img src="assets/logout.png" align="right" style="margin-top: 1%; width : 30px ; height : 25px;" (click)="logout()">
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content [fullscreen]="true">
+
+    <ion-card *ngFor = "let dish of dishList; let i = index" (click)="dishView(i)">
+      <ion-card-content>
+        <ion-img [src] = "dish.dishimage" class="card-image" style="width: 300px; height: 300px; margin-left: auto; margin-right: auto;"></ion-img>
+        <ion-card-subtitle style = "padding-top: 10px">RECIPE NAME:</ion-card-subtitle>
+        <ion-card-title>{{dish.recipe}}</ion-card-title>
+        <ion-card-subtitle style = "padding-top: 10px">by {{ ' ' + dish.username }}</ion-card-subtitle>
+      </ion-card-content>
+  
+    </ion-card>
+
+</ion-content>
+
+<ion-toolbar>
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <img src="assets/adddish.png" style="width : 40px ; height : 70%;" (click)="addDish()">
+  </ion-tab-bar>
+</ion-tabs>
+</ion-toolbar>
